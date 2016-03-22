@@ -18,12 +18,12 @@
  
 ##fixed parameters
 #openerp
-OE_USER="odoo"
+OE_USER="apet"
 OE_HOME="/opt/$OE_USER"
 OE_HOME_EXT="/opt/$OE_USER/$OE_USER-server"
 
 #Enter version for checkout "8.0" for version 8.0, "7.0 (version 7), saas-4, saas-5 (opendays version) and "master" for trunk
-OE_VERSION="8.0"
+OE_VERSION="9.0"
 
 #set the superadmin password
 OE_SUPERADMIN="superadminpassword"
@@ -67,7 +67,7 @@ sudo cp /usr/local/bin/wkhtmltopdf /usr/bin
 sudo cp /usr/local/bin/wkhtmltoimage /usr/bin
 	
 echo -e "\n---- Create ODOO system user ----"
-sudo adduser --system --quiet --shell=/bin/bash --home=$OE_HOME --gecos 'ODOO' --group $OE_USER
+sudo adduser --system --quiet --shell=/bin/bash --home=$OE_HOME --gecos 'APET' --group $OE_USER
 
 echo -e "\n---- Create Log directory ----"
 sudo mkdir /var/log/$OE_USER
